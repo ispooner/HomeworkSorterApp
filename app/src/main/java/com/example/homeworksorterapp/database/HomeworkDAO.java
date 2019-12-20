@@ -20,6 +20,9 @@ public interface HomeworkDAO {
     @Query("SELECT * FROM homeworks WHERE day = :day")
     List<HomeworkEntity> getDayHomeworks(HomeworkEntity.Day day);
 
+    @Query("SELECT * FROM homeworks WHERE ID = :id")
+    HomeworkEntity getHomework(int id);
+
     @Insert
     void insertHomework(HomeworkEntity homework);
 

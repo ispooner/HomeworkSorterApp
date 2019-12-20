@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        style="@style/TitleTestStyle"
+        android:id="@+id/entry_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TitleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        style="@style/TextStyle"
+        android:id="@+id/entry_weekday_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="weekday"
+        app:layout_constraintTop_toBottomOf="@id/entry_title_tv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        style="@style/TextStyle"
+        android:id="@+id/entry_complete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="complete"
+        app:layout_constraintTop_toBottomOf="@id/entry_title_tv"
+        app:layout_constraintStart_toEndOf="@id/entry_weekday_tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
